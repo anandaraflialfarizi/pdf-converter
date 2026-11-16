@@ -11,7 +11,7 @@ A desktop app for macOS and Windows for converting Office documents, text files 
 
 **English.** On Mac, open the DMG and drag the app to Applications. On Windows, run Setup and open the app from Start. To convert Office documents on Windows, also install [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/). The Mac package already includes it.
 
-**Catatan.** Untuk Word, Excel, atau PowerPoint di Windows, pasang LibreOffice juga. Kedua paket ini belum ditandatangani dengan sertifikat penerbit. macOS atau Windows dapat menampilkan peringatan saat pertama dibuka. Untuk repo privat, masuk ke akun GitHub yang memiliki akses sebelum mengunduh.
+**Catatan.** Untuk Word, Excel, atau PowerPoint di Windows, pasang LibreOffice juga. Kedua paket ini belum ditandatangani dengan sertifikat penerbit. macOS atau Windows dapat menampilkan peringatan saat pertama dibuka.
 
 ## Build on macOS
 
