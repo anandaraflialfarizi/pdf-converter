@@ -18,6 +18,7 @@ xcrun swiftc -O -swift-version 5 -module-cache-path "$BUILD_DIR/module-cache" \
   -framework AppKit -framework PDFKit -framework ImageIO \
   -o "$APP/Contents/MacOS/PDFLokal"
 cp "$SOURCE_DIR/Info.plist" "$APP/Contents/Info.plist"
+cp "$SOURCE_DIR/CREDITS.txt" "$APP/Contents/Resources/"
 cp "$SOURCE_DIR/AppIcon.icns" "$APP/Contents/Resources/AppIcon.icns"
 cp -R "$SOURCE_DIR/en.lproj" "$SOURCE_DIR/id.lproj" "$APP/Contents/Resources/"
 if [ ! -d "$APP/Contents/Resources/LibreOffice.app" ]; then

@@ -119,10 +119,19 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate, NSOp
         NSApp.activate(ignoringOtherApps: true)
     }
 
+    @objc private func showCredits() {
+        if let url = Bundle.main.url(forResource: "CREDITS", withExtension: "txt") {
+            NSWorkspace.shared.open(url)
+        }
+    }
+
     private func createMenu() {
         let menu = NSMenu()
         let appItem = NSMenuItem()
         let appMenu = NSMenu()
+        let credits = appMenu.addItem(withTitle: NSLocalizedString("Third-party credits", comment: ""), action: #selector(showCredits), keyEquivalent: "")
+        credits.target = self
+        appMenu.addItem(.separator())
         appMenu.addItem(withTitle: NSLocalizedString("Quit pdf Converter", comment: ""), action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
         appItem.submenu = appMenu
         menu.addItem(appItem)

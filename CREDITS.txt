@@ -1,0 +1,29 @@
+pdf Converter — Third-party credits / Kredit pihak ketiga
+
+LibreOffice — The Document Foundation and LibreOffice contributors.
+Converts Office and OpenDocument files. The macOS build includes the
+selected LibreOffice distribution with its original LICENSE and NOTICE.
+Windows uses the user's separately installed LibreOffice.
+https://www.libreoffice.org/about-us/licenses/
+
+macOS interface, PDF generation and scanning use Apple's AppKit, PDFKit,
+Core Graphics, Core Image, Image I/O and Vision frameworks.
+https://developer.apple.com/documentation/
+
+Windows dependencies / Komponen Windows:
+• Python — Python Software Foundation and contributors (PSF License).
+  https://www.python.org/psf/license/
+• wxPython and wxWidgets — their respective contributors (wxWindows Library Licence).
+  https://www.wxpython.org/  |  https://www.wxwidgets.org/about/licence/
+• Pillow — Pillow contributors and Secret Labs AB (MIT-CMU).
+  https://github.com/python-pillow/Pillow/blob/main/LICENSE
+• NumPy — NumPy contributors (BSD-3-Clause).
+  https://numpy.org/
+• OpenCV — OpenCV contributors (Apache-2.0); opencv-python packaging
+  by its contributors (MIT). Bundled components carry their own notices.
+  https://opencv.org/license/  |  https://github.com/opencv/opencv-python
+• pypdf — pypdf contributors (BSD-3-Clause).
+  https://github.com/py-pdf/pypdf
+
+The portable Windows package retains the Python distribution's license
+and the installed wheels' license files under runtime/.
