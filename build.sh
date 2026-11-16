@@ -13,7 +13,7 @@ if [ ! -x "$ENGINE/Contents/MacOS/soffice" ]; then
 fi
 
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources" "$BUILD_DIR/module-cache"
-xcrun swiftc -O -swift-version 5 -module-cache-path "$BUILD_DIR/module-cache" \
+xcrun swiftc -target "$(uname -m)-apple-macos14.0" -O -swift-version 5 -module-cache-path "$BUILD_DIR/module-cache" \
   "$SOURCE_DIR/PDFConverter.swift" "$SOURCE_DIR/App.swift" \
   -framework AppKit -framework PDFKit -framework ImageIO \
   -o "$APP/Contents/MacOS/PDFLokal"
